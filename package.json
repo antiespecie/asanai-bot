@@ -1,0 +1,16 @@
+{
+  "name": "asanai-bot",
+  "version": "1.0.0",
+  "description": "Asanai - AI Yoga & Wellness Telegram Mini App",
+  "main": "api/webhook.js",
+  "scripts": {
+    "dev": "node api/webhook.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.66.0",
+    "@anthropic-ai/sdk": "^0.24.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
