@@ -106,7 +106,7 @@ const T = {
       return `📊 <b>Your Progress</b>\n\n${msg}\n\n📅 Sessions: <b>${user.sessions}</b>\n⭐ Plan: <b>${pro ? "Pro ✅" : "Free"}</b>`;
     },
     upgradeText: "⭐ <b>Asanai Pro — $7.99/month</b>\n\nUnlock everything:\n\n✅ Unlimited daily AI yoga plans\n✅ All classes + new ones weekly\n✅ Full 30-day programs\n✅ Progress reports\n✅ Priority AI coaching\n\nCancel anytime. Less than a coffee per week. ☕",
-    proActive: (d) => `⭐ <b>Pro Active</b>\n\nMembership active until <b>${d}</b>.\n\nEnjoy unlimited access! 🧘`,
+    proActive: (d) => `⭐ <b>Pro Active</b>\n\nMembership active until <b>${d}</b>.\n\nEnjoy unlimited access! 🧘\n\n─────────────────\n❌ <b>Want to cancel?</b>\nManage your subscription anytime on PayPal:\npaypal.com/myaccount/autopay`,
     paymentLink: "👇 Tap below to complete your subscription securely via PayPal:",
     paymentSuccess: "🎉 <b>Welcome to Asanai Pro!</b>\n\nYour monthly membership is now active.\n\n✅ All classes unlocked\n✅ Unlimited AI plans\n✅ Full programs available\n\nLet's practice! 🧘",
     paymentError: "⚠️ Could not generate payment link. Please try again in a moment.",
@@ -137,7 +137,7 @@ const T = {
       return `📊 <b>Tu Progreso</b>\n\n${msg}\n\n📅 Sesiones: <b>${user.sessions}</b>\n⭐ Plan: <b>${pro ? "Pro ✅" : "Gratis"}</b>`;
     },
     upgradeText: "⭐ <b>Asanai Pro — $7.99/mes</b>\n\nDesbloquea todo:\n\n✅ Planes de yoga ilimitados con IA\n✅ Todas las clases + nuevas cada semana\n✅ Programas completos de 30 días\n✅ Reportes de progreso\n✅ Coaching IA prioritario\n\nCancela cuando quieras. Menos que un café por semana. ☕",
-    proActive: (d) => `⭐ <b>Pro Activo</b>\n\nMembresía activa hasta <b>${d}</b>.\n\n¡Disfruta acceso ilimitado! 🧘`,
+    proActive: (d) => `⭐ <b>Pro Activo</b>\n\nMembresía activa hasta <b>${d}</b>.\n\n¡Disfruta acceso ilimitado! 🧘\n\n─────────────────\n❌ <b>¿Quieres cancelar?</b>\nAdministra tu suscripción cuando quieras en PayPal:\npaypal.com/myaccount/autopay`,
     paymentLink: "👇 Toca abajo para completar tu suscripción de forma segura vía PayPal:",
     paymentSuccess: "🎉 <b>¡Bienvenido a Asanai Pro!</b>\n\nTu membresía mensual está activa.\n\n✅ Todas las clases desbloqueadas\n✅ Planes IA ilimitados\n✅ Programas completos disponibles\n\n¡A practicar! 🧘",
     paymentError: "⚠️ No se pudo generar el enlace de pago. Intenta de nuevo en un momento.",
@@ -168,7 +168,7 @@ const T = {
       return `📊 <b>Seu Progresso</b>\n\n${msg}\n\n📅 Sessões: <b>${user.sessions}</b>\n⭐ Plano: <b>${pro ? "Pro ✅" : "Grátis"}</b>`;
     },
     upgradeText: "⭐ <b>Asanai Pro — $7.99/mês</b>\n\nDesbloqueie tudo:\n\n✅ Planos de yoga ilimitados com IA\n✅ Todas as aulas + novas toda semana\n✅ Programas completos de 30 dias\n✅ Relatórios de progresso\n✅ Coaching IA prioritário\n\nCancele quando quiser. Menos que um café por semana. ☕",
-    proActive: (d) => `⭐ <b>Pro Ativo</b>\n\nAssinatura ativa até <b>${d}</b>.\n\nAproveite o acesso ilimitado! 🧘`,
+    proActive: (d) => `⭐ <b>Pro Ativo</b>\n\nAssinatura ativa até <b>${d}</b>.\n\nAproveite o acesso ilimitado! 🧘\n\n─────────────────\n❌ <b>Quer cancelar?</b>\nGerencie sua assinatura a qualquer momento no PayPal:\npaypal.com/myaccount/autopay`,
     paymentLink: "👇 Toque abaixo para completar sua assinatura com segurança via PayPal:",
     paymentSuccess: "🎉 <b>Bem-vindo ao Asanai Pro!</b>\n\nSua assinatura mensal está ativa.\n\n✅ Todas as aulas desbloqueadas\n✅ Planos IA ilimitados\n✅ Programas completos disponíveis\n\nVamos praticar! 🧘",
     paymentError: "⚠️ Não foi possível gerar o link de pagamento. Tente novamente em instantes.",
