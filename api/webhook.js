@@ -92,7 +92,7 @@ async function createPayPalSubscriptionLink(userId, lang) {
 // ---------------------------------------------------------------------------
 const T = {
   en: {
-    welcome: (n) => `🧘 <b>Welcome to Asanai, ${n}!</b>\n\nYour AI-powered yoga & wellness companion — right here in Telegram.\n\n✨ Personalized AI yoga plans\n📚 Guided classes anytime\n🔥 Daily streak tracking\n⭐ Pro: unlimited access for $7.99/month\n\nWhat would you like to do today?`,
+    welcome: (n) => `🧘 <b>Welcome to Asanai Yoga, ${n}!</b>\n\nYour AI-powered yoga & wellness companion — right here in Telegram.\n\n✨ Personalized AI yoga plans\n📚 Guided classes anytime\n🔥 Daily streak tracking\n⭐ Pro: unlimited access for $7.99/month\n\nWhat would you like to do today?`,
     chooseGoal: "🧘 <b>What do you need today?</b>\n\nChoose your goal and I'll generate a personalized yoga plan:",
     generating: "✨ <i>Generating your personalized plan...</i>",
     error: "Something went wrong. Please try again.",
@@ -105,10 +105,10 @@ const T = {
       const msg = s >= 7 ? `🏆 <b>${s}-day streak!</b> You're on fire!` : s >= 3 ? `🔥 <b>${s}-day streak!</b> Keep it going!` : s === 1 ? `🌱 <b>1-day streak.</b> Come back tomorrow!` : `💪 Complete a session to start your streak!`;
       return `📊 <b>Your Progress</b>\n\n${msg}\n\n📅 Sessions: <b>${user.sessions}</b>\n⭐ Plan: <b>${pro ? "Pro ✅" : "Free"}</b>`;
     },
-    upgradeText: "⭐ <b>Asanai Pro — $7.99/month</b>\n\nUnlock everything:\n\n✅ Unlimited daily AI yoga plans\n✅ All classes + new ones weekly\n✅ Full 30-day programs\n✅ Progress reports\n✅ Priority AI coaching\n\nCancel anytime. Less than a coffee per week. ☕",
+    upgradeText: "⭐ <b>Asanai Yoga Pro — $7.99/month</b>\n\nUnlock everything:\n\n✅ Unlimited daily AI yoga plans\n✅ All classes + new ones weekly\n✅ Full 30-day programs\n✅ Progress reports\n✅ Priority AI coaching\n\nCancel anytime. Less than a coffee per week. ☕",
     proActive: (d) => `⭐ <b>Pro Active</b>\n\nMembership active until <b>${d}</b>.\n\nEnjoy unlimited access! 🧘\n\n─────────────────\n❌ <b>Want to cancel?</b>\nManage your subscription anytime on PayPal:\npaypal.com/myaccount/autopay`,
     paymentLink: "👇 Tap below to complete your subscription securely via PayPal:",
-    paymentSuccess: "🎉 <b>Welcome to Asanai Pro!</b>\n\nYour monthly membership is now active.\n\n✅ All classes unlocked\n✅ Unlimited AI plans\n✅ Full programs available\n\nLet's practice! 🧘",
+    paymentSuccess: "🎉 <b>Welcome to Asanai Yoga Pro!</b>\n\nYour monthly membership is now active.\n\n✅ All classes unlocked\n✅ Unlimited AI plans\n✅ Full programs available\n\nLet's practice! 🧘",
     paymentError: "⚠️ Could not generate payment link. Please try again in a moment.",
     goals: { relax: "😌 Stretch & relax", energize: "⚡ Energize", backpain: "🦴 Back pain", sleep: "🌙 Better sleep", core: "💪 Core strength", flexible: "🤸 Flexibility" },
     btn: {
@@ -123,7 +123,7 @@ const T = {
     planLabel: "Your plan",
   },
   es: {
-    welcome: (n) => `🧘 <b>¡Bienvenido a Asanai, ${n}!</b>\n\nTu compañero de yoga e bienestar con IA — aquí en Telegram.\n\n✨ Planes de yoga personalizados con IA\n📚 Clases guiadas cuando quieras\n🔥 Racha diaria\n⭐ Pro: acceso ilimitado por $7.99/mes\n\n¿Qué te gustaría hacer hoy?`,
+    welcome: (n) => `🧘 <b>¡Bienvenido a Asanai Yoga, ${n}!</b>\n\nTu compañero de yoga e bienestar con IA — aquí en Telegram.\n\n✨ Planes de yoga personalizados con IA\n📚 Clases guiadas cuando quieras\n🔥 Racha diaria\n⭐ Pro: acceso ilimitado por $7.99/mes\n\n¿Qué te gustaría hacer hoy?`,
     chooseGoal: "🧘 <b>¿Qué necesitas hoy?</b>\n\nElige tu objetivo y generaré un plan personalizado:",
     generating: "✨ <i>Generando tu plan personalizado...</i>",
     error: "Algo salió mal. Por favor intenta de nuevo.",
@@ -136,10 +136,10 @@ const T = {
       const msg = s >= 7 ? `🏆 <b>¡Racha de ${s} días!</b> ¡Estás en llamas!` : s >= 3 ? `🔥 <b>¡Racha de ${s} días!</b> ¡Sigue así!` : s === 1 ? `🌱 <b>Racha de 1 día.</b> ¡Vuelve mañana!` : `💪 ¡Completa una sesión para comenzar tu racha!`;
       return `📊 <b>Tu Progreso</b>\n\n${msg}\n\n📅 Sesiones: <b>${user.sessions}</b>\n⭐ Plan: <b>${pro ? "Pro ✅" : "Gratis"}</b>`;
     },
-    upgradeText: "⭐ <b>Asanai Pro — $7.99/mes</b>\n\nDesbloquea todo:\n\n✅ Planes de yoga ilimitados con IA\n✅ Todas las clases + nuevas cada semana\n✅ Programas completos de 30 días\n✅ Reportes de progreso\n✅ Coaching IA prioritario\n\nCancela cuando quieras. Menos que un café por semana. ☕",
+    upgradeText: "⭐ <b>Asanai Yoga Pro — $7.99/mes</b>\n\nDesbloquea todo:\n\n✅ Planes de yoga ilimitados con IA\n✅ Todas las clases + nuevas cada semana\n✅ Programas completos de 30 días\n✅ Reportes de progreso\n✅ Coaching IA prioritario\n\nCancela cuando quieras. Menos que un café por semana. ☕",
     proActive: (d) => `⭐ <b>Pro Activo</b>\n\nMembresía activa hasta <b>${d}</b>.\n\n¡Disfruta acceso ilimitado! 🧘\n\n─────────────────\n❌ <b>¿Quieres cancelar?</b>\nAdministra tu suscripción cuando quieras en PayPal:\npaypal.com/myaccount/autopay`,
     paymentLink: "👇 Toca abajo para completar tu suscripción de forma segura vía PayPal:",
-    paymentSuccess: "🎉 <b>¡Bienvenido a Asanai Pro!</b>\n\nTu membresía mensual está activa.\n\n✅ Todas las clases desbloqueadas\n✅ Planes IA ilimitados\n✅ Programas completos disponibles\n\n¡A practicar! 🧘",
+    paymentSuccess: "🎉 <b>¡Bienvenido a Asanai Yoga Pro!</b>\n\nTu membresía mensual está activa.\n\n✅ Todas las clases desbloqueadas\n✅ Planes IA ilimitados\n✅ Programas completos disponibles\n\n¡A practicar! 🧘",
     paymentError: "⚠️ No se pudo generar el enlace de pago. Intenta de nuevo en un momento.",
     goals: { relax: "😌 Estirar y relajar", energize: "⚡ Energizarme", backpain: "🦴 Dolor de espalda", sleep: "🌙 Dormir mejor", core: "💪 Fuerza de núcleo", flexible: "🤸 Flexibilidad" },
     btn: {
@@ -154,7 +154,7 @@ const T = {
     planLabel: "Tu plan",
   },
   pt: {
-    welcome: (n) => `🧘 <b>Bem-vindo ao Asanai, ${n}!</b>\n\nSeu companheiro de yoga e bem-estar com IA — aqui no Telegram.\n\n✨ Planos de yoga personalizados com IA\n📚 Aulas guiadas a qualquer hora\n🔥 Sequência diária\n⭐ Pro: acesso ilimitado por $7.99/mês\n\nO que você gostaria de fazer hoje?`,
+    welcome: (n) => `🧘 <b>Bem-vindo ao Asanai Yoga, ${n}!</b>\n\nSeu companheiro de yoga e bem-estar com IA — aqui no Telegram.\n\n✨ Planos de yoga personalizados com IA\n📚 Aulas guiadas a qualquer hora\n🔥 Sequência diária\n⭐ Pro: acesso ilimitado por $7.99/mês\n\nO que você gostaria de fazer hoje?`,
     chooseGoal: "🧘 <b>O que você precisa hoje?</b>\n\nEscolha seu objetivo e vou gerar um plano personalizado:",
     generating: "✨ <i>Gerando seu plano personalizado...</i>",
     error: "Algo deu errado. Por favor tente novamente.",
@@ -167,10 +167,10 @@ const T = {
       const msg = s >= 7 ? `🏆 <b>Sequência de ${s} dias!</b> Você está arrasando!` : s >= 3 ? `🔥 <b>Sequência de ${s} dias!</b> Continue assim!` : s === 1 ? `🌱 <b>Sequência de 1 dia.</b> Volte amanhã!` : `💪 Complete uma sessão para começar sua sequência!`;
       return `📊 <b>Seu Progresso</b>\n\n${msg}\n\n📅 Sessões: <b>${user.sessions}</b>\n⭐ Plano: <b>${pro ? "Pro ✅" : "Grátis"}</b>`;
     },
-    upgradeText: "⭐ <b>Asanai Pro — $7.99/mês</b>\n\nDesbloqueie tudo:\n\n✅ Planos de yoga ilimitados com IA\n✅ Todas as aulas + novas toda semana\n✅ Programas completos de 30 dias\n✅ Relatórios de progresso\n✅ Coaching IA prioritário\n\nCancele quando quiser. Menos que um café por semana. ☕",
+    upgradeText: "⭐ <b>Asanai Yoga Pro — $7.99/mês</b>\n\nDesbloqueie tudo:\n\n✅ Planos de yoga ilimitados com IA\n✅ Todas as aulas + novas toda semana\n✅ Programas completos de 30 dias\n✅ Relatórios de progresso\n✅ Coaching IA prioritário\n\nCancele quando quiser. Menos que um café por semana. ☕",
     proActive: (d) => `⭐ <b>Pro Ativo</b>\n\nAssinatura ativa até <b>${d}</b>.\n\nAproveite o acesso ilimitado! 🧘\n\n─────────────────\n❌ <b>Quer cancelar?</b>\nGerencie sua assinatura a qualquer momento no PayPal:\npaypal.com/myaccount/autopay`,
     paymentLink: "👇 Toque abaixo para completar sua assinatura com segurança via PayPal:",
-    paymentSuccess: "🎉 <b>Bem-vindo ao Asanai Pro!</b>\n\nSua assinatura mensal está ativa.\n\n✅ Todas as aulas desbloqueadas\n✅ Planos IA ilimitados\n✅ Programas completos disponíveis\n\nVamos praticar! 🧘",
+    paymentSuccess: "🎉 <b>Bem-vindo ao Asanai Yoga Pro!</b>\n\nSua assinatura mensal está ativa.\n\n✅ Todas as aulas desbloqueadas\n✅ Planos IA ilimitados\n✅ Programas completos disponíveis\n\nVamos praticar! 🧘",
     paymentError: "⚠️ Não foi possível gerar o link de pagamento. Tente novamente em instantes.",
     goals: { relax: "😌 Alongar e relaxar", energize: "⚡ Energizar", backpain: "🦴 Dor nas costas", sleep: "🌙 Dormir melhor", core: "💪 Força do core", flexible: "🤸 Flexibilidade" },
     btn: {
@@ -347,7 +347,7 @@ function formatPlan(raw, lang) {
 async function handleStart(chatId, firstName) {
   const user = getUser(chatId);
   if (!user.lang) {
-    await sendMessage(chatId, `🌐 <b>Welcome to Asanai!</b>\nBienvenido · Bem-vindo\n\nChoose your language / Elige tu idioma / Escolha seu idioma:`, { reply_markup: langMenu() });
+    await sendMessage(chatId, `🌐 <b>Welcome to Asanai Yoga!</b>\nBienvenido · Bem-vindo\n\nChoose your language / Elige tu idioma / Escolha seu idioma:`, { reply_markup: langMenu() });
     return;
   }
   await sendMessage(chatId, tx(user).welcome(firstName || "friend"), { reply_markup: mainMenu(user) });
@@ -474,7 +474,7 @@ module.exports = async function handler(req, res) {
       user.isPro = true;
       user.proExpiry = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
       await sendMessage(parseInt(userId), tx(user).paymentSuccess, { reply_markup: mainMenu(user) });
-      return res.status(200).send(`<html><body style="font-family:sans-serif;text-align:center;padding:40px"><h2>🎉 Payment successful!</h2><p>Return to Telegram to enjoy Asanai Pro.</p></body></html>`);
+      return res.status(200).send(`<html><body style="font-family:sans-serif;text-align:center;padding:40px"><h2>🎉 Payment successful!</h2><p>Return to Telegram to enjoy Asanai Yoga Pro.</p></body></html>`);
     }
     if (action === "paypal_cancel" && userId) {
       return res.status(200).send(`<html><body style="font-family:sans-serif;text-align:center;padding:40px"><h2>Payment cancelled</h2><p>Return to Telegram and try again anytime.</p></body></html>`);
